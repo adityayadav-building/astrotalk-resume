@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Aditya Yadav · Product Intern Pitch for Astrotalk</title>
+<meta name="description" content="Why Astrotalk should hire Aditya Yadav as a Product Management Intern: a builder who tests with users, ships AI products and thinks in business outcomes.">
+<meta property="og:title" content="Why Astrotalk should hire Aditya Yadav (Product Intern)">
+<meta property="og:description" content="A pitch deck in website form: proof of work, product thinking, and a 90-day plan.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#FFC629">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%23FFC629'/%3E%3Ctext x='50' y='68' font-size='56' text-anchor='middle' font-family='Arial' font-weight='700' fill='%23171309'%3EAY%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  /* Astrotalk-inspired palette: golden yellow + warm orange on cream (day) / near-black (night) */
+  --yellow:#FFC629; --yellow-2:#FFD65C; --orange:#F7941D; --deep:#E67A00;
+  --ink:#171309; --ink-2:#4A4332; --muted:#7A7260;
+  --bg:#FFFBEF; --bg-2:#FFF3CF; --card:#FFFFFF; --line:#F1E3B3;
+  --shadow:0 10px 30px rgba(120,80,0,.12);
+  --on-yellow:#171309;
+}
+:root[data-theme="dark"]{
+  --ink:#FFF7E0; --ink-2:#D9CFAF; --muted:#A39A7C;
+  --bg:#12100A; --bg-2:#1B170C; --card:#1F1A0D; --line:#3A3216;
+  --shadow:0 10px 30px rgba(0,0,0,.45);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-snap-type:y proximity;scroll-behavior:smooth}
+body{font-family:'Poppins',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--ink);line-height:1.55;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+section.slide{min-height:100svh;display:flex;align-items:center;padding:96px 0 72px;scroll-snap-align:start;position:relative}
+section.slide:nth-of-type(even){background:var(--bg-2)}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:.78rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--deep);margin-bottom:14px}
+.eyebrow::before{content:"";width:26px;height:3px;border-radius:3px;background:linear-gradient(90deg,var(--yellow),var(--orange))}
+h1,h2,h3{line-height:1.12;letter-spacing:-.02em}
+h2{font-size:clamp(1.9rem,4.4vw,3.2rem);font-weight:800;margin-bottom:14px}
+h2 em,h1 em{font-style:normal;background:linear-gradient(90deg,var(--yellow),var(--orange));-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{font-size:clamp(1rem,1.6vw,1.2rem);color:var(--ink-2);max-width:760px}
+.grid{display:grid;gap:18px;margin-top:34px}
+.g2{grid-template-columns:repeat(2,1fr)}.g3{grid-template-columns:repeat(3,1fr)}.g4{grid-template-columns:repeat(4,1fr)}
+@media(max-width:900px){.g3,.g4{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:620px){.g2,.g3,.g4{grid-template-columns:1fr}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:22px;box-shadow:var(--shadow);transition:transform .25s,border-color .25s}
+.card:hover{transform:translateY(-4px);border-color:var(--yellow)}
+.card h3{font-size:1.1rem;font-weight:700;margin-bottom:8px}
+.card p,.card li{color:var(--ink-2);font-size:.93rem}
+.card ul{padding-left:18px;display:grid;gap:6px;margin-top:8px}
+.tag{display:inline-block;font-size:.72rem;font-weight:600;padding:4px 10px;border-radius:999px;background:var(--yellow);color:var(--on-yellow);margin:0 6px 6px 0}
+.tag.line{background:transparent;border:1px solid var(--yellow);color:var(--ink)}
+.num{font-size:clamp(2rem,4vw,2.8rem);font-weight:800;line-height:1;background:linear-gradient(90deg,var(--yellow),var(--orange));-webkit-background-clip:text;background-clip:text;color:transparent}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 26px;border-radius:999px;font-weight:700;text-decoration:none;border:2px solid transparent;transition:transform .2s,box-shadow .2s;cursor:pointer;font-family:inherit;font-size:.98rem}
+.btn.primary{background:linear-gradient(135deg,var(--yellow),var(--orange));color:var(--on-yellow);box-shadow:0 8px 22px rgba(247,148,29,.4)}
+.btn.ghost{border-color:var(--yellow);color:var(--ink);background:transparent}
+.btn:hover{transform:translateY(-2px)}
+/* top bar */
+header.bar{position:fixed;inset:0 0 auto 0;z-index:50;backdrop-filter:blur(12px);background:color-mix(in srgb,var(--bg) 80%,transparent);border-bottom:1px solid var(--line)}
+.bar .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;text-decoration:none}
+.logo{width:34px;height:34px;border-radius:10px;background:linear-gradient(135deg,var(--yellow),var(--orange));display:grid;place-items:center;color:var(--on-yellow);font-weight:800;font-size:.9rem}
+.bar nav{display:flex;gap:6px;align-items:center}
+.bar nav a.nl{font-size:.82rem;font-weight:500;padding:8px 12px;border-radius:999px;text-decoration:none;color:var(--ink-2)}
+.bar nav a.nl:hover{background:var(--bg-2)}
+@media(max-width:860px){.bar nav a.nl{display:none}}
+.theme{border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:999px;padding:8px 14px;font-family:inherit;font-weight:600;font-size:.8rem;cursor:pointer}
+.progress{position:fixed;top:64px;left:0;height:3px;width:0;background:linear-gradient(90deg,var(--yellow),var(--orange));z-index:60}
+/* dots */
+.dots{position:fixed;right:14px;top:50%;transform:translateY(-50%);display:grid;gap:10px;z-index:40}
+.dots a{width:10px;height:10px;border-radius:50%;background:var(--line);border:1px solid var(--yellow);display:block}
+.dots a.on{background:var(--yellow);transform:scale(1.35)}
+@media(max-width:760px){.dots{display:none}}
+.counter{position:fixed;left:18px;bottom:16px;font-size:.75rem;font-weight:600;color:var(--muted);z-index:40}
+/* hero */
+.hero{overflow:hidden}
+.hero h1{font-size:clamp(2.4rem,7vw,5.2rem);font-weight:800;margin:6px 0 18px}
+.stars{position:absolute;inset:0;pointer-events:none;overflow:hidden}
+.stars i{position:absolute;width:var(--s);height:var(--s);border-radius:50%;background:var(--yellow);opacity:.0;animation:tw var(--d) ease-in-out infinite;animation-delay:var(--l)}
+@keyframes tw{0%,100%{opacity:.05;transform:scale(.6)}50%{opacity:.7;transform:scale(1.2)}}
+.orb{position:absolute;right:-120px;top:12%;width:min(520px,70vw);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 35% 35%,var(--yellow-2),var(--yellow) 45%,var(--orange));opacity:.9;filter:blur(1px);animation:float 9s ease-in-out infinite}
+.orb::after{content:"";position:absolute;inset:-26px;border-radius:50%;border:2px dashed var(--orange);opacity:.5;animation:spin 40s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes float{50%{transform:translateY(-18px)}}
+.hero .wrap{position:relative;z-index:2}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0 28px}
+.hero-cta{display:flex;gap:12px;flex-wrap:wrap}
+.hint{margin-top:26px;font-size:.8rem;color:var(--muted)}
+/* reveal */
+.rv{opacity:0;transform:translateY(24px);transition:opacity .7s,transform .7s}
+.rv.in{opacity:1;transform:none}
+/* table */
+.map{display:grid;gap:12px;margin-top:30px}
+.row{display:grid;grid-template-columns:1fr 36px 1.3fr;gap:12px;align-items:stretch}
+.row .a,.row .b{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px 18px;font-size:.92rem}
+.row .a{font-weight:600}
+.row .b{color:var(--ink-2);border-left:4px solid var(--yellow)}
+.row .ar{display:grid;place-items:center;color:var(--orange);font-weight:800;font-size:1.3rem}
+@media(max-width:700px){.row{grid-template-columns:1fr}.row .ar{display:none}}
+/* project */
+.proj .m{display:flex;gap:18px;flex-wrap:wrap;margin:12px 0}
+.proj .m div{min-width:90px}
+.proj .m small{display:block;color:var(--muted);font-size:.74rem}
+.proj .m b{font-size:1.35rem;font-weight:800;color:var(--deep)}
+/* hypothesis */
+.hyp .k{font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--deep);margin-top:12px;display:block}
+.note{margin-top:22px;font-size:.84rem;color:var(--muted);border-left:3px solid var(--yellow);padding-left:12px}
+/* win-win */
+.vs{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:30px}
+@media(max-width:760px){.vs{grid-template-columns:1fr}}
+.vs .card h3{display:flex;align-items:center;gap:10px}
+.vs .card h3 span{width:34px;height:34px;border-radius:10px;display:grid;place-items:center;background:linear-gradient(135deg,var(--yellow),var(--orange));color:var(--on-yellow);font-size:1rem}
+.vs li{margin-bottom:2px}
+.promise{margin-top:20px;background:linear-gradient(135deg,var(--yellow),var(--orange));color:var(--on-yellow);border-radius:20px;padding:22px 26px;font-weight:600}
+.promise small{display:block;font-weight:500;margin-top:4px;opacity:.85}
+/* timeline */
+.tl{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:34px;position:relative}
+@media(max-width:820px){.tl{grid-template-columns:1fr}}
+.tl .card{position:relative;padding-top:34px}
+.tl .d{position:absolute;top:-16px;left:20px;background:linear-gradient(135deg,var(--yellow),var(--orange));color:var(--on-yellow);font-weight:800;padding:6px 16px;border-radius:999px;font-size:.85rem}
+/* skills */
+.skills h3{font-size:.95rem}
+.why{margin-top:10px;font-size:.84rem;color:var(--muted)}
+/* cta */
+.cta{text-align:center}
+.cta .wrap{display:flex;flex-direction:column;align-items:center}
+.cta h2{font-size:clamp(2.2rem,6vw,4.4rem)}
+.contacts{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin-top:26px}
+footer.src{margin-top:48px;font-size:.74rem;color:var(--muted);max-width:820px;text-align:left}
+footer.src a{color:var(--deep)}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}.rv{opacity:1;transform:none}}
+@media print{header.bar,.dots,.counter,.progress{display:none}section.slide{min-height:auto;page-break-after:always}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<div class="progress" id="prog"></div>
+<header class="bar">
+  <div class="wrap">
+    <a class="brand" href="#top"><span class="logo">AY</span><span>Aditya Yadav</span></a>
+    <nav>
+      <a class="nl" href="#why">Why Astrotalk</a>
+      <a class="nl" href="#proof">Proof</a>
+      <a class="nl" href="#product">Product thinking</a>
+      <a class="nl" href="#hybrid">Hybrid</a>
+      <a class="nl" href="#plan">90 days</a>
+      <button class="theme" id="theme" aria-label="Toggle day or night theme">🌙 Night</button>
+    </nav>
+  </div>
+</header>
+<div class="dots" id="dots"></div>
+<div class="counter" id="counter">01 / 10</div>
+
+<main>
+<!-- 1 HERO -->
+<section class="slide hero" id="top">
+  <div class="stars" id="stars"></div>
+  <div class="orb"></div>
+  <div class="wrap">
+    <div class="eyebrow rv">Application · Product Management Intern</div>
+    <h1 class="rv">Hire the intern who<br><em>builds, tests</em> and<br>thinks like an owner.</h1>
+    <p class="lead rv">I'm Aditya, a 2nd-year CSE student at DTU. I ship AI products, run user experiments with real numbers, and follow the startup world closely. This page is my case for joining Astrotalk's product team.</p>
+    <div class="chips rv">
+      <span class="tag">Agentic RAG builder</span><span class="tag">UX research (A/B tested)</span><span class="tag">ML + CV + Robotics</span><span class="tag">Entrepreneurship-trained</span><span class="tag line">DTU · CGPA 8.05</span>
+    </div>
+    <div class="hero-cta rv">
+      <a class="btn primary" href="#why">See why me →</a>
+      <a class="btn ghost" href="#contact">Skip to contact</a>
+    </div>
+    <p class="hint rv">Tip: use ← → or ↑ ↓ keys to flip through, like slides.</p>
+  </div>
+</section>
+
+<!-- 2 PITCH IN 10 SECONDS -->
+<section class="slide" id="why">
+  <div class="wrap">
+    <div class="eyebrow rv">The 10-second pitch</div>
+    <h2 class="rv">Three things a <em>product intern</em> needs. I already do them.</h2>
+    <p class="lead rv">Great PMs sit between users, data and engineers. My work so far lines up with all three.</p>
+    <div class="grid g3">
+      <div class="card rv"><h3>1 · Understand users</h3><p>At DTU's SADHU &amp; CIDE I A/B-tested three touchless interfaces against trackpad and keyboard on task time, errors and comfort, then turned the results into a design recommendation.</p></div>
+      <div class="card rv"><h3>2 · Build &amp; ship</h3><p>I built a full agentic RAG product: FastAPI streaming backend, a chat UI with live agent steps and citations, and LangSmith tracing. I'm comfortable talking to engineers because I am one.</p></div>
+      <div class="card rv"><h3>3 · Think in outcomes</h3><p>I benchmark, measure and ask why things fail. A Junior MBA in Entrepreneurship, MUN and debate experience keep me honest about the business side: who pays, why, and what moves the metric.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 3 WHY ASTROTALK -->
+<section class="slide" id="company">
+  <div class="wrap">
+    <div class="eyebrow rv">Why Astrotalk</div>
+    <h2 class="rv">A category leader with <em>real product problems</em> left to solve.</h2>
+    <p class="lead rv">Public numbers that make this the most interesting consumer-product seat I could pick.</p>
+    <div class="grid g4">
+      <div class="card rv"><div class="num" data-count="5" data-suffix="Cr+">0</div><p>users guided across India and 60+ countries (Astrotalk)</p></div>
+      <div class="card rv"><div class="num" data-count="1176" data-prefix="₹" data-suffix=" Cr">0</div><p>FY25 revenue from operations, up 85% YoY</p></div>
+      <div class="card rv"><div class="num" data-count="37" data-suffix="%">0</div><p>of FY26 topline from international markets, up from ~20% in FY25</p></div>
+      <div class="card rv"><div class="num" data-count="12" data-suffix=" sec">0</div><p>claimed response time, with the first call free in 13+ languages</p></div>
+    </div>
+    <div class="grid g3" style="margin-top:18px">
+      <div class="card rv"><h3>Marketplace, not just an app</h3><p>Two sides to balance: users who want trust and speed, and tens of thousands of astrologers who want demand. Product choices move both.</p></div>
+      <div class="card rv"><h3>Marriage-heavy, 25–35 core</h3><p>Reported ~65% of revenue comes from marriage queries, ~60% of customers are women. Clear segments are a gift for product experiments.</p></div>
+      <div class="card rv"><h3>Going global</h3><p>The stated goal is ~40% of revenue overseas. That means localisation, pricing, payments and trust design for new markets.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 4 FIT MAP -->
+<section class="slide" id="fit">
+  <div class="wrap">
+    <div class="eyebrow rv">Role fit</div>
+    <h2 class="rv">What a PM intern does → <em>what I've done</em></h2>
+    <div class="map">
+      <div class="row rv"><div class="a">Run experiments &amp; read results</div><div class="ar">→</div><div class="b">A/B-tested 3 interfaces. Gesture volume ~2× faster than trackpad (5s vs 11s); virtual mouse ~4.1× slower, which drove a hybrid-design call instead of a blind "ship it".</div></div>
+      <div class="row rv"><div class="a">Turn messy data into decisions</div><div class="ar">→</div><div class="b">Benchmarked 6 RAG pipelines on one shared schema. Found that winter imagery cut a model's macro-F1 from 0.466 to 0.340, then built an audit to explain why.</div></div>
+      <div class="row rv"><div class="a">Work with engineering</div><div class="ar">→</div><div class="b">Wrote production-style backends (FastAPI, Docker, Git, Linux) and used shared Pydantic schemas so teams can compare and integrate parts.</div></div>
+      <div class="row rv"><div class="a">Write specs &amp; communicate</div><div class="ar">→</div><div class="b">Research write-ups, MUN and debate (zonal, district level), group discussion podium. I can explain a technical trade-off to a non-technical person.</div></div>
+      <div class="row rv"><div class="a">Lead without authority</div><div class="ar">→</div><div class="b">Co-Head of Neural AI at DTU: recruiting, guiding members and organising technical events. Junior Council at DelTech MUN.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 5 PROOF -->
+<section class="slide" id="proof">
+  <div class="wrap">
+    <div class="eyebrow rv">Proof of work</div>
+    <h2 class="rv">Not interested in startups. <em>Building like one.</em></h2>
+    <div class="grid g2">
+      <div class="card proj rv"><h3>Agentic RAG Research Assistant</h3>
+        <p>Answers research questions with cited sources over 300 arXiv papers. Six pipelines compared: closed-book, vanilla and tuned retrieval, single-agent, multi-agent, keyword-only agent.</p>
+        <div class="m"><div><b>300</b><small>papers</small></div><div><b>6</b><small>pipelines</small></div><div><b>Live</b><small>agent-step UI</small></div></div>
+        <span class="tag">Python</span><span class="tag">LangChain</span><span class="tag">FastAPI</span><span class="tag">LangSmith</span>
+        <p class="why">PM lens: transparency (citations, visible steps) is a trust feature, the same trust Astrotalk sells.</p></div>
+      <div class="card proj rv"><h3>UX Research Internship · DTU</h3>
+        <p>Built a touchless suite (Virtual Mouse, Gesture Volume Controller, Air Canvas) and A/B-tested it against trackpad and keyboard.</p>
+        <div class="m"><div><b>~2×</b><small>faster volume</small></div><div><b>~70s</b><small>to learn Air Canvas</small></div><div><b>4.1×</b><small>slower mouse</small></div></div>
+        <span class="tag">OpenCV</span><span class="tag">MediaPipe</span><span class="tag">A/B testing</span>
+        <p class="why">PM lens: I report the losing variant honestly and still extract a recommendation.</p></div>
+      <div class="card proj rv"><h3>A Season Is Worth Half the Colour</h3>
+        <p>Deployment-time cue audit for Sentinel-2 land-cover models. Ranks cues texture &gt; shape &gt; colour and introduces a severity measure.</p>
+        <div class="m"><div><b>0.466→0.340</b><small>macro-F1 under shift</small></div><div><b>p&lt;0.0001</b><small>5 runs</small></div></div>
+        <span class="tag">ResNet-50</span><span class="tag">EfficientNet-B0</span><span class="tag">BigEarthNet</span>
+        <p class="why">PM lens: knowing when a model breaks in the real world is the whole job after launch.</p></div>
+      <div class="card proj rv"><h3>Autonomy, Rescue &amp; Prediction</h3>
+        <ul><li><b>UGV obstacle avoidance:</b> ROS 2 + Gazebo + LiDAR with a potential-field planner.</li>
+        <li><b>Search &amp; rescue pipeline:</b> OpenCV detection plus greedy routing under capacity limits.</li>
+        <li><b>Cinematic success prediction:</b> 89.21% accuracy, 0.96 minority-class F1 on 5,000+ records.</li></ul>
+        <p class="why">PM lens: constrained optimisation and class imbalance are everyday marketplace problems.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 6 SKILLS -->
+<section class="slide skills" id="skills">
+  <div class="wrap">
+    <div class="eyebrow rv">Tech stack</div>
+    <h2 class="rv">Technical depth that <em>earns engineers' trust.</em></h2>
+    <div class="grid g3">
+      <div class="card rv"><h3>Languages</h3><span class="tag">Python</span><span class="tag">C++</span><span class="tag">C</span><span class="tag">HTML</span><span class="tag">CSS</span><p class="why">Can read a PR, sanity-check an estimate, prototype an idea.</p></div>
+      <div class="card rv"><h3>ML &amp; Data</h3><span class="tag">Machine Learning</span><span class="tag">Deep Learning</span><span class="tag">RAG</span><span class="tag">LangChain</span><span class="tag">Scikit-Learn</span><span class="tag">Pandas</span><span class="tag">NumPy</span><span class="tag">Matplotlib</span><p class="why">Self-serve analysis and AI features without waiting on a queue.</p></div>
+      <div class="card rv"><h3>Vision &amp; Robotics</h3><span class="tag">OpenCV</span><span class="tag">MediaPipe</span><span class="tag">ROS 2 Jazzy</span><span class="tag">Gazebo Harmonic</span><p class="why">Systems thinking: sensors, constraints, failure modes.</p></div>
+      <div class="card rv"><h3>Tools</h3><span class="tag">FastAPI</span><span class="tag">LangSmith</span><span class="tag">Docker</span><span class="tag">Git</span><span class="tag">Linux</span><span class="tag">Jupyter</span><span class="tag">Kaggle</span><p class="why">Tracing, observability and shipping habits.</p></div>
+      <div class="card rv"><h3>Certifications</h3><ul><li>Junior MBA in Entrepreneurship, Clever Harvey</li><li>Advanced Learning Algorithms, DeepLearning.AI &amp; Stanford</li><li>Supervised ML: Regression &amp; Classification, DeepLearning.AI &amp; Stanford</li></ul></div>
+      <div class="card rv"><h3>Soft power</h3><ul><li>Co-Head, Neural AI (DTU)</li><li>Junior Council, DelTech MUN</li><li>3rd place GD; zonal &amp; district debate</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<!-- 7 PRODUCT THINKING -->
+<section class="slide" id="product">
+  <div class="wrap">
+    <div class="eyebrow rv">Product thinking</div>
+    <h2 class="rv">Three <em>outside-in hypotheses</em> I'd love to test.</h2>
+    <p class="lead rv">I only see public information, so treat these as sharp questions rather than answers. Real data would confirm or kill them within weeks.</p>
+    <div class="grid g3">
+      <div class="card hyp rv"><h3>1 · Make the free first call a habit</h3>
+        <span class="k">Hypothesis</span><p>Users who get a clear, specific takeaway in the first call come back more often than users who don't.</p>
+        <span class="k">Test</span><p>Instrument first-call outcome (rating, re-call within 7 days). Trial a short pre-call intake so minutes go to the answer.</p>
+        <span class="k">Metric</span><p>Day-7 repeat consult rate.</p></div>
+      <div class="card hyp rv"><h3>2 · Localise trust for new markets</h3>
+        <span class="k">Hypothesis</span><p>International users need different trust signals and payment framing than Indian users.</p>
+        <span class="k">Test</span><p>Run region-wise funnel comparisons and test proof points: verification steps, refund guarantees, session previews.</p>
+        <span class="k">Metric</span><p>Wallet-recharge conversion by country.</p></div>
+      <div class="card hyp rv"><h3>3 · Help users choose the right astrologer</h3>
+        <span class="k">Hypothesis</span><p>With thousands of experts, choice overload lowers satisfaction. Better matching raises it.</p>
+        <span class="k">Test</span><p>A/B a guided "pick for my question" flow against the browse list, with topic, language, price and rating.</p>
+        <span class="k">Metric</span><p>Time to first call, session rating.</p></div>
+    </div>
+    <p class="note">Rooted in public facts: first call free, 13+ languages, tens of thousands of astrologers, rising international share. I haven't seen internal data and would validate everything with your team first.</p>
+  </div>
+</section>
+
+<!-- 8 HYBRID -->
+<section class="slide" id="hybrid">
+  <div class="wrap">
+    <div class="eyebrow rv">How I'd work with you</div>
+    <h2 class="rv">A hybrid setup that's a <em>win for both sides.</em></h2>
+    <p class="lead rv">Ownership of outcomes matters more than hours at a desk. A structured hybrid model gives Astrotalk more, not less.</p>
+    <div class="vs">
+      <div class="card rv"><h3><span>★</span>Why it helps Astrotalk</h3>
+        <ul><li><b>Fresh, current skills.</b> My coursework and research in ML, agents and RAG feed straight into the product.</li>
+        <li><b>Outcome-based work.</b> Clear weekly deliverables (analysis, experiment design, spec) instead of hours logged.</li>
+        <li><b>Low cost, high energy.</b> A motivated builder who is also learning in parallel and brings ideas from both worlds.</li>
+        <li><b>Talent pipeline.</b> A low-risk way to evaluate a future full-time product hire from a top engineering college.</li>
+        <li><b>Async-friendly.</b> I document decisions, write clear updates and don't need hand-holding.</li></ul></div>
+      <div class="card rv"><h3><span>✓</span>Why it helps me</h3>
+        <ul><li><b>Real learning.</b> Apply classroom ML and entrepreneurship in a live, scaled consumer product.</li>
+        <li><b>Compounding growth.</b> Academic depth plus real-world product exposure make me better at both.</li>
+        <li><b>Sustained commitment.</b> A sustainable schedule means I show up focused for the whole internship.</li>
+        <li><b>Longer runway.</b> I can stay beyond a short stint and own a thread through to results.</li></ul></div>
+    </div>
+    <div class="promise rv">My commitment: fixed sync windows, a weekly written update, and a deliverable you can see every week.<small>Happy to agree a concrete schedule together.</small></div>
+  </div>
+</section>
+
+<!-- 9 PLAN -->
+<section class="slide" id="plan">
+  <div class="wrap">
+    <div class="eyebrow rv">First 90 days</div>
+    <h2 class="rv">What I'd <em>deliver</em>.</h2>
+    <div class="tl">
+      <div class="card rv"><span class="d">Days 1–30</span><h3>Learn the product</h3>
+        <ul><li>Use Astrotalk end to end; map the funnel and write a friction log</li><li>Study support tickets, reviews and competitor flows</li><li>Learn the data stack and metrics dictionary</li><li>Ship one small analysis the team can use</li></ul></div>
+      <div class="card rv"><span class="d">Days 31–60</span><h3>Run something real</h3>
+        <ul><li>Own one hypothesis from the list above, from spec to experiment</li><li>Write a crisp PRD with success metrics and guardrails</li><li>Work with design and engineering through launch</li></ul></div>
+      <div class="card rv"><span class="d">Days 61–90</span><h3>Show impact</h3>
+        <ul><li>Read out results honestly, wins and losses</li><li>Propose the next two experiments</li><li>Document playbooks so the learning outlives the internship</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<!-- 10 CTA -->
+<section class="slide cta" id="contact">
+  <div class="stars" id="stars2"></div>
+  <div class="wrap">
+    <div class="eyebrow rv">Let's talk</div>
+    <h2 class="rv">Give me one project.<br>I'll show you <em>the rest.</em></h2>
+    <p class="lead rv">I'd love a 15-minute conversation, or a small take-home that mirrors a real Astrotalk problem. Your call.</p>
+    <div class="contacts rv" id="contacts">
+      <a class="btn primary" href="mailto:adityaonwork440@gmail.com?subject=Product%20Intern%20%E2%80%93%20Aditya%20Yadav">✉ adityaonwork440@gmail.com</a>
+      <a class="btn ghost" href="tel:+918076367836">☎ +91 80763 67836</a>
+    </div>
+    <footer class="src rv">
+      <b>Sources for company figures:</b>
+      <a href="https://astrotalk.com/talk-to-astrologer">Astrotalk website</a> (users, countries, languages, response time) ·
+      <a href="https://www.outlookbusiness.com/technology/astrotalk-reports-85-revenue-growth-in-fy25-as-tier-i-cities-boost-platform-activity">Outlook Business</a> (FY25 revenue) ·
+      <a href="https://inc42.com/features/can-astrotalk-chart-a-future-beyond-astrology/">Inc42</a> (international share, customer mix) ·
+      <a href="https://ipocentral.in/astrotalk-appoints-deepak-khetan/">IPO Central</a> (overseas ambition).
+      This is an independent application page and is not affiliated with or endorsed by Astrotalk. Colours are inspired by Astrotalk's yellow-and-orange identity.
+    </footer>
+  </div>
+</section>
+</main>
+
+<script>
+/* Optional links: paste your URLs here and the buttons appear. */
+const LINKS = { linkedin:"", github:"" };
+(function(){
+  const c=document.getElementById('contacts');
+  if(LINKS.linkedin) c.insertAdjacentHTML('beforeend','<a class="btn ghost" target="_blank" rel="noopener" href="'+LINKS.linkedin+'">in LinkedIn</a>');
+  if(LINKS.github) c.insertAdjacentHTML('beforeend','<a class="btn ghost" target="_blank" rel="noopener" href="'+LINKS.github+'">⌥ GitHub</a>');
+
+  /* theme */
+  const root=document.documentElement, tb=document.getElementById('theme');
+  let saved=null; try{saved=localStorage.getItem('theme')}catch(e){}
+  const set=t=>{root.dataset.theme=t;tb.textContent=t==='dark'?'☀️ Day':'🌙 Night';try{localStorage.setItem('theme',t)}catch(e){}};
+  set(saved|| (matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'));
+  tb.onclick=()=>set(root.dataset.theme==='dark'?'light':'dark');
+
+  /* twinkling stars */
+  ['stars','stars2'].forEach(id=>{
+    const el=document.getElementById(id); if(!el) return;
+    for(let i=0;i<34;i++){
+      const s=document.createElement('i');
+      s.style.cssText='left:'+Math.random()*100+'%;top:'+Math.random()*100+'%;--s:'+(2+Math.random()*4)+'px;--d:'+(3+Math.random()*5)+'s;--l:'+(Math.random()*5)+'s';
+      el.appendChild(s);
+    }
+  });
+
+  /* slides, dots, progress */
+  const slides=[...document.querySelectorAll('section.slide')];
+  const dots=document.getElementById('dots'), counter=document.getElementById('counter'), prog=document.getElementById('prog');
+  slides.forEach((s,i)=>{const a=document.createElement('a');a.href='#'+s.id;a.setAttribute('aria-label','Slide '+(i+1));dots.appendChild(a)});
+  let cur=0;
+  const upd=()=>{
+    const h=document.documentElement;
+    prog.style.width=(scrollY/(h.scrollHeight-innerHeight||1)*100)+'%';
+    let best=0,bd=1e9;
+    slides.forEach((s,i)=>{const d=Math.abs(s.getBoundingClientRect().top-64);if(d<bd){bd=d;best=i}});
+    cur=best;
+    [...dots.children].forEach((d,i)=>d.classList.toggle('on',i===cur));
+    counter.textContent=String(cur+1).padStart(2,'0')+' / '+String(slides.length).padStart(2,'0');
+  };
+  addEventListener('scroll',upd,{passive:true});upd();
+  addEventListener('keydown',e=>{
+    if(['INPUT','TEXTAREA'].includes(document.activeElement.tagName)) return;
+    const go=n=>{e.preventDefault();slides[Math.max(0,Math.min(slides.length-1,n))].scrollIntoView({behavior:'smooth'})};
+    if(['ArrowRight','ArrowDown','PageDown'].includes(e.key)) go(cur+1);
+    if(['ArrowLeft','ArrowUp','PageUp'].includes(e.key)) go(cur-1);
+  });
+
+  /* reveal + count-up */
+  const count=el=>{
+    const t=+el.dataset.count,p=el.dataset.prefix||'',s=el.dataset.suffix||'';let n=0;
+    const step=()=>{n+=Math.max(1,t/40);if(n>=t){el.textContent=p+t.toLocaleString('en-IN')+s}else{el.textContent=p+Math.floor(n).toLocaleString('en-IN')+s;requestAnimationFrame(step)}};step();
+  };
+  const io=new IntersectionObserver(es=>es.forEach(e=>{
+    if(!e.isIntersecting) return;
+    e.target.classList.add('in');
+    e.target.querySelectorAll('[data-count]').forEach(count);
+    io.unobserve(e.target);
+  }),{threshold:.15});
+  document.querySelectorAll('.rv').forEach((el,i)=>{el.style.transitionDelay=(i%4)*90+'ms';io.observe(el)});
+})();
+</script>
+</body>
+</html>
